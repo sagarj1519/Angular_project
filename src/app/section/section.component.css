@@ -1,0 +1,129 @@
+/* 
+
+
+/* Dropdown container */
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+} */
+
+/* Dropdown button */
+/* .dropdown button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+} */
+
+/* Dropdown content (hidden by default) */
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} */
+
+/* Links inside the dropdown */
+/* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} */
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {
+    background-color: #f1f1f1;
+} */
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover button {
+    background-color: #0056b3;
+}
+
+nav{
+    display: flex;
+    gap: 125px;
+    padding-left: 75px;
+    
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        gap: 5px;
+        padding-left: 5px;
+    }
+} */
+
+/* Media query for mobile phones */
+/* @media (max-width: 480px) {
+    nav {
+        
+        display: flex;
+        gap: 0%;
+        padding-left: 0%;
+    }
+
+} */ 
+
+
+.nav-item {
+    flex: 1 1 150px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .icon-wrapper {
+    margin: auto;
+  }
+  
+  .icon-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-item {
+      flex: 1 1 100%;
+    }
+  
+    .dropdown-content {
+      position: relative;
+    }
+  }
+  

@@ -1,0 +1,153 @@
+<!-- <div class="card text-bg- mt-2 p-5" style="padding: 0.5rem !important; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+<nav>
+  <div class="_3sdu8W emupdz" >
+    <div class="_3ETuFY">
+      <div class="_2GaeWJ" style="width: 64px; height: 64px">
+        <img
+          class="_2puWtW _3a3qyb hoverZoomLink"
+          alt="Electronics"
+          src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        />
+      </div>
+
+      <div class="dropdown mt-3">
+        <span class="span btn-secondary">Electronics</span>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="_3sdu8W emupdz" >
+    <div class="_3ETuFY">
+      <div class="_2GaeWJ" >
+        <img
+          class="_2puWtW _3a3qyb hoverZoomLink"
+          alt="Electronics"
+          src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        />
+      </div>
+
+      <div class="dropdown mt-3">
+        <span class="span btn-secondary">Mobile</span>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="_3sdu8W emupdz">
+    <div class="_3ETuFY">
+      <div class="_2GaeWJ" >
+        <img
+          class="_2puWtW _3a3qyb hoverZoomLink"
+          alt="Electronics"
+          src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        />
+      </div>
+
+      <div class="dropdown mt-3">
+        <span class="span btn-secondary">Fashion</span>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="_3sdu8W emupdz">
+    <div class="_3ETuFY">
+      <div class="_2GaeWJ" >
+        <img
+          class="_2puWtW _3a3qyb hoverZoomLink"
+          alt="Electronics"
+          src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        />
+      </div>
+
+      <div class="dropdown mt-3">
+        <span class="span btn-secondary">Toys</span>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="_3sdu8W emupdz">
+    <div class="_3ETuFY">
+      <div class="_2GaeWJ" >
+        <img
+          class="_2puWtW _3a3qyb hoverZoomLink"
+          alt="Electronics"
+          src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        />
+      </div>
+
+      <div class="dropdown mt-3">
+        <span class="span btn-secondary">Appliances</span>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="_3sdu8W emupdz">
+    <div class="_3ETuFY">
+      <div class="_2GaeWJ">
+        <img
+          class="_2puWtW _3a3qyb hoverZoomLink"
+          alt="Electronics"
+          src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        />
+      </div>
+
+      <div class="dropdown mt-3">
+        <span class="span btn-secondary">Home & Furniture</span>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Another action</a>
+          <a href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</nav>
+</div> -->
+
+
+<div class="card mt-2" style="padding: 0.5rem !important; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+  <nav class="d-flex flex-wrap justify-content-around">
+    <div class="nav-item" *ngFor="let item of navItems">
+      <div class="d-flex flex-column align-items-center">
+        <div class="icon-wrapper" style="width: 64px; height: 64px;">
+          <img [src]="item.image" class="icon-img" alt="{{item.title}}">
+        </div>
+        <div class="dropdown mt-3">
+          <span class="span btn-secondary" ><a routerLink="product1">{{ item.title }}</a></span>
+          <div class="dropdown-content">
+            <a routerLink="product-details" *ngFor="let action of item.actions">{{ action }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+</div>

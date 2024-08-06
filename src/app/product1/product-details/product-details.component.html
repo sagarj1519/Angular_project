@@ -1,0 +1,60 @@
+
+
+  <!-- Main content with sidebar -->
+  <div class="main-container" style="display: flex; flex-direction: column">
+   
+    <!-- Section code with sidebar and main content -->
+    <div style="display: flex; flex-grow: 1">
+      
+      <!-- Sidebar -->
+      <div class="sidebar" style="background-color: #f0dac5; width: 250px; padding: 1rem; margin-top: 10px;">
+        <h2>Filters</h2>
+        <div class="filter-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><input type="checkbox" id="mobiles" name="category" value="Mobiles"><label for="mobiles"> Mobiles</label></li>
+            <li><input type="checkbox" id="electronics" name="category" value="Electronics"><label for="electronics"> Electronics</label></li>
+            <li><input type="checkbox" id="fashion" name="category" value="Fashion"><label for="fashion"> Fashion</label></li>
+            <li><input type="checkbox" id="grocery" name="category" value="Grocery"><label for="grocery"> Grocery</label></li>
+          </ul>
+        </div>
+        <div class="filter-section">
+          <h4>Price Range</h4>
+          <input type="range" id="price-range" name="price-range" min="0" max="50000" step="1000">
+          <div>₹<span id="price-value">0</span> - ₹50,000</div>
+        </div>
+        <div class="filter-section">
+          <h4>Brands</h4>
+          <ul>
+            <li><input type="checkbox" id="brand1" name="brand" value="Brand1"><label for="brand1"> Brand1</label></li>
+            <li><input type="checkbox" id="brand2" name="brand" value="Brand2"><label for="brand2"> Brand2</label></li>
+            <li><input type="checkbox" id="brand3" name="brand" value="Brand3"><label for="brand3"> Brand3</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-box" style="background-color: #fde8e8;  padding: 1rem; margin-top: 10px; margin-left: 5px;">
+        <div class="title" style="color: rgb(20, 20, 20)">
+          <h2>Mobiles</h2>
+        </div>
+        <div class="product-list">
+          <div class="product-card" *ngFor="let product of product_details">
+            <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+            <div class="product-details">
+              <h3>{{ product.name }}</h3>
+              <p>{{ product.description }}</p>
+              <div class="product-price">₹{{ product.price }}</div>
+              <button class="add-to-cart"><a routerLink="cart">Add to Cart</a></button>
+              <button class="add-to-cart" style="margin-left: 5px;"><a routerLink="Loginauth">Buy Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
